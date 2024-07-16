@@ -905,6 +905,10 @@ def observer_kalman_identification(*args, m=None, transpose=False, dt=True, trun
     H[:,:,1:] = Y[:,:,:]
     H = H/dt # scaling
 
+    # for siso return a 1D array instead of a 3D array
+    if q == 1 and p == 1:
+        H = np.squeeze(H)
+
     # Return the first m Markov parameters
     return H if not transpose else np.transpose(H)
 
