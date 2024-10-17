@@ -6,20 +6,12 @@ RMM, 30 Mar 2011 (based on TestModelSimp from v0.4a)
 import numpy as np
 import pytest
 
-<<<<<<< HEAD
 from control import StateSpace, TimeResponseData, c2d, forced_response, \
     impulse_response, step_response, rss, tf
 from control.exception import ControlArgument, ControlDimension
-from control.modelsimp import balred, eigensys_realization, hsvd, markov, \
-    modred
+from control.modelsimp import balred, eigensys_realization, hsvd, okid, \
+    markov, modred
 from control.tests.conftest import slycotonly
-=======
-
-from control import StateSpace, impulse_response, forced_response, tf, rss, c2d
-from control.exception import ControlMIMONotImplemented
-from control.tests.conftest import slycotonly
-from control.modelsimp import balred, hsvd, markov, okid, modred
->>>>>>> 67d6ef0 (Add unit tests, change okid output for siso)
 
 
 class TestModelsimp:

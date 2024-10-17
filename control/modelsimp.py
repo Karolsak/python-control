@@ -43,24 +43,15 @@
 # External packages and modules
 import numpy as np
 import warnings
-<<<<<<< HEAD
 from .exception import ControlSlycot, ControlArgument, ControlDimension
-=======
-from .exception import ControlSlycot, ControlMIMONotImplemented, \
-    ControlArgument, ControlDimension
->>>>>>> ab66e5d (Add okid, add okid example)
 from .iosys import isdtime, isctime
 from .statesp import StateSpace
 from .statefbk import gram
 from .timeresp import TimeResponseData
 
-<<<<<<< HEAD
 __all__ = ['hankel_singular_values', 'balanced_reduction', 'model_reduction',
-           'minimal_realization', 'eigensys_realization', 'markov', 'hsvd',
-           'balred', 'modred', 'minreal', 'era']
-=======
-__all__ = ['hsvd', 'balred', 'modred', 'era', 'markov', 'minreal', 'okid']
->>>>>>> ab66e5d (Add okid, add okid example)
+           'minimal_realization', 'eigensys_realization', 'observer_kalman_identification',
+           'markov', 'hsvd', 'balred', 'modred', 'minreal', 'era', 'okid']
 
 
 # Hankel Singular Value Decomposition
