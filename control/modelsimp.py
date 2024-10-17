@@ -559,6 +559,15 @@ def markov(*args, m=None, transpose=False, dt=None, truncate=False):
     H : ndarray
         First m Markov parameters, [D CB CAB ...].
 
+    See Also
+    --------
+    observer_kalman_identification
+
+    Notes
+    -----
+    The :func:`~control.markov` command estimates the Markov parameters directly, which can be hard for slightly damped systems.
+    The :func:`~control.observer_kalman_identification` command uses a Kalman filter, which is better suited for slightly damped systems.
+
     References
     ----------
     .. [1] J.-N. Juang, M. Phan, L. G.  Horta, and R. W. Longman,
@@ -750,6 +759,15 @@ def observer_kalman_identification(*args, m=None, transpose=False, dt=True, trun
     -------
     H : ndarray
         First m Markov parameters, [D CB CAB ...].
+
+    See Also
+    --------
+    markov
+
+    Notes
+    -----
+    The :func:`~control.markov` command estimates the Markov parameters directly, which can be hard for slightly damped systems.
+    The :func:`~control.observer_kalman_identification` command uses a Kalman filter, which is better suited for slightly damped systems.
 
     References
     ----------
