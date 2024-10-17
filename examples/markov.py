@@ -1,7 +1,7 @@
 # markov.py
 # Johannes Kaisinger, 4 July 2024
 #
-# Demonstrate estimation of markov parameters.
+# Demonstrate estimation of Markov parameters.
 # SISO, SIMO, MISO, MIMO case
 
 import numpy as np
