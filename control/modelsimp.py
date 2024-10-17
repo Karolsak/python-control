@@ -704,16 +704,16 @@ def observer_kalman_identification(*args, m=None, transpose=False, dt=True, trun
         y[k] &= C x[k] + D u[k]
 
     given data for u and y.  The algorithm assumes that that C A^k B = 0 for
-    k > m-2 (see [1]_).  Note that the problem is ill-posed if the length of
+    k > m-2 (see [1]_, [2]_).  Note that the problem is ill-posed if the length of
     the input data is less than the desired number of Markov parameters (a
     warning message is generated in this case).
 
     The function can be called with either 1, 2 or 3 arguments:
 
-    * ``H = okid(data)``
-    * ``H = okid(data, m)``
-    * ``H = okid(Y, U)``
-    * ``H = okid(Y, U, m)``
+    * ``H = observer_kalman_identification(data)``
+    * ``H = observer_kalman_identification(data, m)``
+    * ``H = observer_kalman_identification(Y, U)``
+    * ``H = observer_kalman_identification(Y, U, m)``
 
     where `data` is an `TimeResponseData` object, and `Y`, `U`, are 1D or 2D
     array and m is an integer.
