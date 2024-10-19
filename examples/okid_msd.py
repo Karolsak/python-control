@@ -1,7 +1,7 @@
 # okid_msd.py
 # Johannes Kaisinger, 13 July 2024
 #
-# Demonstrate estimation of markov parameters via okid.
+# Demonstrate estimation of Markov parameters via okid.
 # SISO, SIMO, MISO, MIMO case
 
 import numpy as np
